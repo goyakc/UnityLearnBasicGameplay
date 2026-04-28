@@ -285,6 +285,8 @@ GameObject:
   - component: {fileID: 5222159462115652582}
   - component: {fileID: 7985543663836159559}
   - component: {fileID: 5204961016385817445}
+  - component: {fileID: 3686835163581786321}
+  - component: {fileID: 8524622744748580585}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -353,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cf9958d0edd39409b68ec4e7f26756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 10
+  speed: 5
 --- !u!114 &5204961016385817445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +368,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a176c759b7d04f34fbd653ee56b0780e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &3686835163581786321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990989514419855091}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.08226963, y: 0.21717934, z: 0.3218284}
+  m_Center: {x: 0.002638361, y: 0.11059704, z: 0.0074308994}
+--- !u!114 &8524622744748580585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990989514419855091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c7be48c71e06a43ba235c4c0c49b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &4373382998603750877
 GameObject:
   m_ObjectHideFlags: 0

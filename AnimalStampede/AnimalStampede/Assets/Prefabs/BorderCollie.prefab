@@ -1448,6 +1448,8 @@ GameObject:
   - component: {fileID: 454525969747622382}
   - component: {fileID: 4964004384239683474}
   - component: {fileID: 7815894173345010434}
+  - component: {fileID: -7266829175450505357}
+  - component: {fileID: 2294371839341135130}
   m_Layer: 0
   m_Name: BorderCollie
   m_TagString: Untagged
@@ -1541,7 +1543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cf9958d0edd39409b68ec4e7f26756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 15
+  speed: 10
 --- !u!114 &7815894173345010434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,6 +1556,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a176c759b7d04f34fbd653ee56b0780e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &-7266829175450505357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053187088878957956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13635021, y: 0.24345894, z: 0.29134005}
+  m_Center: {x: -0.0032988654, y: 0.082925096, z: 0.02754091}
+--- !u!114 &2294371839341135130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053187088878957956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c7be48c71e06a43ba235c4c0c49b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &2254473100010678610
 GameObject:
   m_ObjectHideFlags: 0
